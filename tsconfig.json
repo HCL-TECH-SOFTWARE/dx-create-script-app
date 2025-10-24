@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+  "target": "ES6",
+  "module": "nodenext",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "isolatedModules": true
+  },
+  "include": ["src/**/*", "__tests__/**/*"]
+}

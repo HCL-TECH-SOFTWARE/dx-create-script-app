@@ -1,0 +1,17 @@
+{
+  "name": "config.json",
+  "desc": "The attributes in this file are used for configuration purpose and those must not be deleted.",
+  "disablePrompt": "false",
+  "dxProtocol": "http",
+  "dxConnectProtocol": "https",
+  "hostname": "localhost",
+  "dxPort": "10039",
+  "dxSoapPort": "10033",
+  "dxConnectPort": "10202",
+  "dxContextRoot": "/wps",
+  "contenthandlerPath": "/wps/mycontenthandler",
+  "dxUsername": "mycredential",
+  "dxPassword": "mycredential",
+  "wcmContentId": "",
+  "wcmSiteArea": "Script Application Library/Script Applications"
+}
