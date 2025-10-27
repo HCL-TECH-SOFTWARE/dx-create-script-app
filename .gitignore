@@ -1,0 +1,8 @@
+node_modules/
+logger.log
+.DS_Store
+.vscode/
+*.log
+.eslintcache
+coverage/
+.editorconfig
