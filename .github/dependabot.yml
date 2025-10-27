@@ -22,6 +22,7 @@ updates:
       interval: "daily"
     assignees:
       - "sharikan@hcl-software.com"
+      - "david_bell@hcl-software.com"
     open-pull-requests-limit: 5
 
 
