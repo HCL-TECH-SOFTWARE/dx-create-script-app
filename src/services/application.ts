@@ -121,8 +121,11 @@ export class DefaultApplicationService implements ApplicationService {
     // Log completion instructions
     this.logger.info(`Done. Now run:
 
-
+			# Go to the generated directory
 			cd ${finalPath}
+      
+      
+			# To deploy the script locally run
 			npm install
 			npm run dev
 			
