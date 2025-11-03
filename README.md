@@ -65,8 +65,8 @@ npm create @hcl-software/dx-script-app
 
 ```bash
 # Clone the repository
-git clone <repository_url/create-dx-script-app.git>
-cd create-dx-script-app/
+git clone <repository_url/dx-create-script-app.git>
+cd dx-create-script-app/
 
 # Install dependencies and build
 npm install
