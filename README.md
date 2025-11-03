@@ -23,13 +23,13 @@ A modular toolkit for scaffolding modern React applications on HCL DX using Vite
 
 ```bash
 # Using npx (requires npm 5.2+ to be installed)
-npx create-dx-script-app
+npx @hcl-software/create-dx-script-app
 
 # Using npm init
-npm init dx-script-app
+npm init @hcl-software/dx-script-app
 
 # Using yarn create
-yarn create dx-script-app
+yarn create @hcl-software/dx-script-app
 ```
 
 Follow the interactive prompts to set up your project with your preferred template and options.
@@ -58,15 +58,15 @@ npm run dx-deploy
 ### Via NPM (Recommended)
 
 ```bash
-npm create dx-script-app
+npm create @hcl-software/dx-script-app
 ```
 
 ### Building and using locally
 
 ```bash
 # Clone the repository
-git clone <repository_url/create-dx-script-app.git>
-cd create-dx-script-app/
+git clone <repository_url/dx-create-script-app.git>
+cd dx-create-script-app/
 
 # Install dependencies and build
 npm install
@@ -74,7 +74,7 @@ npm run build
 npm link
 
 # Now you can run it locally
-npm create dx-script-app
+npm create @hcl-software/dx-script-app
 ```
 
 ## Project Configuration

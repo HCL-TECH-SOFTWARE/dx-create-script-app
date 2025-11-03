@@ -57,7 +57,7 @@ npm run test
 echo "✅ Unit tests complete"
 
 echo "\n=== 🚀 Creating test app ==="
-npm create dx-script-app "$APP_NAME" -- --template "$TEMPLATE"
+npm create @hcl-software/dx-script-app "$APP_NAME" -- --template "$TEMPLATE"
 
 echo "\n=== 🔍 Verifying app creation ==="
 # Check if directory exists
@@ -83,7 +83,7 @@ fi
 echo "✅ Project name in package.json matches app name: $PROJECT_NAME_IN_PACKAGE"
 
 # Unlink the CLI package to ensure clean testing environment
-npm unlink -g create-dx-script-app || true
+npm unlink -g @hcl-software/create-dx-script-app || true
 echo "✅ CLI unlinked"
 
 echo "\n=== 📦 Installing test app dependencies ==="

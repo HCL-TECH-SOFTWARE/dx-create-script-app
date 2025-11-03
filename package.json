@@ -1,8 +1,8 @@
 {
-  "name": "create-dx-script-app",
+  "name": "@hcl-software/create-dx-script-app",
   "version": "1.0.0",
   "description": "A modular toolkit for scaffolding modern React applications on HCL DX using Vite",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --testPathPattern=__tests__/unit",
@@ -32,11 +32,14 @@
     "scaffold",
     "template"
   ],
-  "author": "HCL America Inc.",
+  "author": "Sharika Nandakumar<SharikaN@hcl.com>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "your-repository-url"
+    "url": "https://github.com/HCL-TECH-SOFTWARE/dx-create-script-app.git"
+  },
+   "bugs": {
+    "url": "https://github.com/HCL-TECH-SOFTWARE/dx-create-script-app/issues"
   },
   "dependencies": {
     "commander": "^14.0.0",
