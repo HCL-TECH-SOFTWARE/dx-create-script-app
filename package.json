@@ -1,6 +1,6 @@
 {
   "name": "@hcl-software/create-dx-script-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modular toolkit for scaffolding modern React applications on HCL DX using Vite",
   "main": "dist/index.js",
   "scripts": {
