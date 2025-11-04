@@ -6,3 +6,4 @@ logger.log
 .eslintcache
 coverage/
 .editorconfig
+dist/
