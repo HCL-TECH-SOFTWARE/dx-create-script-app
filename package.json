@@ -1,6 +1,6 @@
 {
   "name": "@hcl-software/create-dx-script-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A modular toolkit for scaffolding modern React applications on HCL DX using Vite",
   "main": "dist/index.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "type": "git",
     "url": "https://github.com/HCL-TECH-SOFTWARE/dx-create-script-app.git"
   },
-   "bugs": {
+  "bugs": {
     "url": "https://github.com/HCL-TECH-SOFTWARE/dx-create-script-app/issues"
   },
   "dependencies": {
