@@ -121,6 +121,7 @@ Projects created with this tool can be customized by:
 - Modifying ESLint, Vite, and TypeScript configurations
 - Adjusting store configuration files in each template's `store/` directory
 
+
 ### Proxy Configuration
 
 Generated projects include pre-configured proxy settings to handle API requests during development:
