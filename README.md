@@ -100,15 +100,11 @@ DX_PASSWORD=your-password
 ```
 
 By default, the deployment script reads from `.env.local` or falls back to `.env` if not found.
-
 > To use a different environment file (such as `.env.custom.name` or `.env.prod`), set the `DX_ENV_FILE` environment variable:
-
 ```
 DX_ENV_FILE=.env.custom.name npm run dx-deploy
 ```
-
 This allows you to deploy with different DX credentials or settings for each environment.
-
 > Missing values will be supplemented by any existing values from your system's environment variables.
 
 ### Fallback Configuration
@@ -162,7 +158,6 @@ This tool helps you create and deploy Script Applications that work seamlessly w
 - [DXClient Script Applications Documentation](https://help.hcl-software.com/digital-experience/9.5/CF230/extend_dx/development_tools/dxclient/dxclient_artifact_types/scriptapplications/)
 
 The documentation covers:
-
 - Script Application artifact types
 - How to create, update, and deploy Script Applications using DXClient
 - Working with Script Application properties and configurations
