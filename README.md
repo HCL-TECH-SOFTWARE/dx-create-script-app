@@ -71,7 +71,6 @@ cd dx-create-script-app/
 # Install dependencies and build
 npm install
 npm run build
-npm link
 
 # Now you can run it locally
 ./dist/index.js
