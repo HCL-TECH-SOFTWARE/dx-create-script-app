@@ -14,8 +14,8 @@ A modular toolkit for scaffolding modern React applications on HCL DX using Vite
 
 ## Requirements
 
-- **Node.js ≥ 20.19**
-- **npm ≥ 9.6**
+- **Node.js ≥ 24.9.0**
+- **npm ≥ 11.19.1**
 
 ## Quick Start
 

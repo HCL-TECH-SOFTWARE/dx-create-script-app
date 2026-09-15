@@ -78,7 +78,13 @@ export class DefaultApplicationService implements ApplicationService {
    */
   public async createScriptApp(scriptAppName?: string, template?: string): Promise<void> {
     // Get script app name if not provided
-    const appName = scriptAppName || (await this.promptService.askForScriptAppName());
+    const rawAppName = scriptAppName || (await this.promptService.askForScriptAppName());
+
+    // Normalize before using the name in paths, package metadata, and CSS selectors.
+    const appName = this.fileService.formatProjectName(rawAppName);
+    if (!/^[a-zA-Z0-9_-]+$/.test(appName)) {
+      throw new Error('Name must only contain letters, numbers, underscores, or hyphens.');
+    }
 
     // Get available templates
     const availableTemplates = this.templateService.getAvailableTemplates();
@@ -89,9 +95,7 @@ export class DefaultApplicationService implements ApplicationService {
       selectedTemplate = await this.promptService.askForTemplate(availableTemplates);
     }
 
-    // Format the project name
-    const formattedName = this.fileService.formatProjectName(appName);
-    const finalPath = this.fileService.resolvePath(`./${formattedName}`);
+    const finalPath = this.fileService.resolvePath(`./${appName}`);
 
     // Check if directory already exists
     if (this.fileService.directoryExists(finalPath)) {
@@ -111,7 +115,7 @@ export class DefaultApplicationService implements ApplicationService {
 
     // Generate a unique identifier for the ROOT_IDENTIFIER placeholder
     const timestamp = Date.now();
-    const uniqueId = `${appName.toLowerCase().replace(/\s+/g, '-')}-${timestamp}`;
+    const uniqueId = `${appName}-${timestamp}`;
 
     // Update all template placeholders
     this.fileService.updateTemplatePlaceholders(finalPath, appName, [
