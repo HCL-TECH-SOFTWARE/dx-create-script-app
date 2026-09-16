@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Aligned shared dependency versions across TypeScript and JavaScript templates.
 - Updated `@hcl-software/dxclient` to `237.0.0`.
 - Updated GitHub Actions workflows to use Node.js 24.
+- Updated Vite to `7.3.6` and Vitest packages to `5.0.0`.
 - Normalized script app names before placeholder replacement so names with spaces generate valid package names, paths, IDs, and CSS selectors.
 
 ### Added
