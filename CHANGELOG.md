@@ -14,7 +14,6 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - Added per-package `.npmrc` supply-chain controls with `min-release-age=7` and `save-exact=true`.
-- Added `DEFERRED-UPGRADES.md` to document dependency upgrades intentionally deferred.
 
 ### Removed
 - Removed unused root `dotenv` dependency.
