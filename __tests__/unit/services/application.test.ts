@@ -1,5 +1,5 @@
 /* ======================================================================== *
- * Copyright 2025 HCL America Inc.                                          *
+ * Copyright 2025, 2026 HCL America Inc.                                    *
  * Licensed under the Apache License, Version 2.0 (the "License");          *
  * you may not use this file except in compliance with the License.         *
  * You may obtain a copy of the License at                                  *
@@ -158,6 +158,24 @@ describe('DefaultApplicationService', () => {
     // Assert
     expect(promptService.askForScriptAppName).toHaveBeenCalled();
     expect(fileService.formatProjectName).toHaveBeenCalledWith('my-app-from-prompt');
+  });
+
+  it('should normalize spaced app names before replacing placeholders', async () => {
+    templateService.getAvailableTemplates.mockReturnValue(['react-ts']);
+    fileService.formatProjectName.mockReturnValue('my-spaced-app');
+    fileService.resolvePath.mockReturnValue('/path/to/my-spaced-app');
+    fileService.directoryExists.mockReturnValue(false);
+    templateService.getTemplatePath.mockReturnValue('/template/path');
+
+    await applicationService.createScriptApp('My Spaced App', 'react-ts');
+
+    expect(fileService.formatProjectName).toHaveBeenCalledWith('My Spaced App');
+    expect(fileService.resolvePath).toHaveBeenCalledWith('./my-spaced-app');
+    expect(fileService.updateTemplatePlaceholders).toHaveBeenCalledWith(
+      '/path/to/my-spaced-app',
+      'my-spaced-app',
+      expect.any(Array)
+    );
   });
 
   /**

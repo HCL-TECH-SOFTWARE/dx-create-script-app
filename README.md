@@ -2,7 +2,7 @@
 
 A modular toolkit for scaffolding modern React applications on HCL DX using Vite. This tool helps you quickly create production-ready React applications with JavaScript or TypeScript that integrate seamlessly with the HCL Digital Experience platform. This package depends on the [Vite](https://github.com/vitejs/vite).
 
-(C) 2025 HCL America Inc. Apache-2.0 license [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+(C) 2025, 2026 HCL America Inc. Apache-2.0 license [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Features
 
@@ -14,8 +14,8 @@ A modular toolkit for scaffolding modern React applications on HCL DX using Vite
 
 ## Requirements
 
-- **Node.js ≥ 20.19**
-- **npm ≥ 9.6**
+- **Node.js ≥ 24.9.0**
+- **npm ≥ 11.19.1**
 
 ## Quick Start
 

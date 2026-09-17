@@ -1,5 +1,5 @@
  # ======================================================================== #
- # Copyright 2025 HCL America Inc.                                          #
+ # Copyright 2025, 2026 HCL America Inc.                                    #
  # Licensed under the Apache License, Version 2.0 (the "License");          #
  # you may not use this file except in compliance with the License.         #
  # You may obtain a copy of the License at                                  #
@@ -28,10 +28,8 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
-      # Ensure npm 11.5.1 or later is installed to support OIDC
-      - run: npm install -g npm@latest
       - run: npm ci
       - run: npm run build
       - run: npm publish --access public
